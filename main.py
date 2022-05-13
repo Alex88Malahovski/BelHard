@@ -14,6 +14,13 @@ class Counter:
             return self.current
         else:
             return 'Out of range'
+        
+     def dicrease(self):
+        if self.current < self.end:
+            self.current -= 1
+            return self.current
+        else:
+            return 'Out of range'    
 
 my_count=Counter(start=0, end=3)
 print(my_count.increase()) # --> 1
